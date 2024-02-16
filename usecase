@@ -1,0 +1,58 @@
+usecase User {
+  title User
+  include ViewHomepage
+  include TranslateSwahiliSentence
+  include TranslateEnglishSentence
+  include SummarizeSwahiliArticle
+  include SummarizeEnglishArticle
+  include PracticeEnglishToSwahiliTranslation
+  include PracticeSwahiliToEnglishTranslation
+  include PracticeSwahiliSummarization
+  include PracticeEnglishSummarization
+}
+
+usecase ViewHomepage {
+  title View Homepage
+}
+
+usecase TranslateSwahiliSentence {
+  title Translate Swahili Sentence
+}
+
+usecase TranslateEnglishSentence {
+  title Translate English Sentence
+}
+
+usecase SummarizeSwahiliArticle {
+  title Summarize Swahili Article
+}
+
+usecase SummarizeEnglishArticle {
+  title Summarize English Article
+}
+
+usecase PracticeEnglishToSwahiliTranslation {
+  title Practice English to Swahili Translation
+}
+
+usecase PracticeSwahiliToEnglishTranslation {
+  title Practice Swahili to English Translation
+}
+
+usecase PracticeSwahiliSummarization {
+  title Practice Swahili Summarization
+}
+
+usecase PracticeEnglishSummarization {
+  title Practice English Summarization
+}
+
+User --> ViewHomepage
+User --> TranslateSwahiliSentence
+User --> TranslateEnglishSentence
+User --> SummarizeSwahiliArticle
+User --> SummarizeEnglishArticle
+User --> PracticeEnglishToSwahiliTranslation
+User --> PracticeSwahiliToEnglishTranslation
+User --> PracticeSwahiliSummarization
+User --> PracticeEnglishSummarization
